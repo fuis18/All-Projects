@@ -2,8 +2,7 @@
 header {
   background: var(--background-main);
   justify-content: space-between;
-  padding: 4px 20px;
-  height: 40px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
 }
@@ -16,6 +15,9 @@ header nav svg,
 header nav button {
   height: 32px;
   cursor: pointer;
+}
+header nav a {
+  text-decoration: none;
 }
 header nav svg[viewbox="0 0 100 100"] {
   fill: var(--color-text);

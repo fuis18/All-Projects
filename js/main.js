@@ -2,7 +2,7 @@
 // Variables
 let form = document.querySelector(".container");
 let fragment = document.createDocumentFragment();
-let veces = 24;
+let times = 17;
 // Funciones
 // Contrucción del titulo de cada boton
 const buildH3 = (i) => {
@@ -14,26 +14,19 @@ const buildH3 = (i) => {
   if (i == 5) return "Admisión";
   if (i == 6) return "Relog";
   if (i == 7) return "IA Text & Background";
-  if (i == 8) return "Juego";
-  if (i == 9) return "Conteo de palabras";
-  if (i == 10) return "Juego 2";
-  if (i == 11) return "Actualizaciones";
-  if (i == 12) return "Configuración";
-  if (i == 13) return "Texturizador";
-  if (i == 14) return "Galería dinámica";
-  if (i == 15) return "Lector de arhivos";
-  if (i == 16) return "Base de Datos";
-  if (i == 17) return "Lazy Load";
-  if (i == 18) return "Bucle Host http";
-  if (i == 19) return "Eficiencia lectora";
-  if (i == 20) return "Web Paint";
-  if (i == 21) return "Geometría";
-  if (i == 22) return "Horario";
-  if (i == 23) return "...";
-  if (i == 24) return "POST DE ACCIONES";
+  if (i == 8) return "Texturizador";
+  if (i == 9) return "Galería dinámica";
+  if (i == 10) return "Lector de arhivos";
+  if (i == 11) return "Base de Datos";
+  if (i == 12) return "Lazy Load";
+  if (i == 13) return "Bucle Host http";
+  if (i == 14) return "Eficiencia lectora";
+  if (i == 15) return "Web Paint";
+  if (i == 16) return "Geometría";
+  if (i == 17) return "Horario";
 };
 // Ejecucción
-for (let i = 1; i <= veces; i++) {
+for (let i = 1; i <= times; i++) {
   let div = document.createElement("DIV");
   div.classList.add("form__div");
   div.textContent = buildH3(i);

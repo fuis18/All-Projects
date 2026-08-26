@@ -15,11 +15,6 @@ const actualizarHora = () => {
   }
 };
 
-document.querySelector(".home").addEventListener("click", () => {
-  const depth = window.location.pathname.split('/').filter(Boolean).length - 1;
-  window.location.assign('../'.repeat(depth) + 'index.html');
-});
-
 actualizarHora();
 setInterval(actualizarHora, 1000);
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Actualización</title>
+	<title>Base de Datos</title>
 	<link rel="stylesheet" href="../../fonts/fonts.css">
 	<link rel="stylesheet" href="../../css/header.css">
 	<link rel="stylesheet" href="../../css/main.css">
@@ -15,11 +15,13 @@
 		<!-- Main -->
 		<nav>
 			<!-- Home -->
+			<a href="../../index.html">
 			<svg viewbox="0 0 100 100" class="home">
 				<path stroke-width=".5" d="
 				M15 65 L15 95 Q15 100 20 100 L42 100 L42 75 L58 75 L58 100 L80 100 Q85 100 85 95 L85 65 L50 35z
 				M50 30 L90.5 64.55 Q93 66.8 95 64.55 L97.5 61.6 Q100 58.5 97.5 56.3 L85 45.5 L85 18 Q85 15 82 15 L73 15 Q70 15 70 18 L70 33 L53.34 18 Q50 15 46.55 18 L2.5 56.3 Q0 58.5 2.6 61.6 L5.1 64.55 Q7 66.8 9.8 64.55z"></path>
 			</svg>
+			</a>
 			<!-- Time -->
 			<div class="time">
 				<div class="hora">00</div>
@@ -43,29 +45,16 @@
 				<line class="sun" x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
 				<path	class="moon" style="display:none;" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
 			</svg>
-			<!-- Lenguage -->
-			<div>ES</div>
-			<!-- Config -->
-			<svg viewbox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="Config">
-				<circle cx="12" cy="12" r="3"/>
-				<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
-			</svg>
 		</nav>
 	</header>
 	<main>
-		<h1>Actualización</h1>
-		<div class="container">
-			<ul>Version 3 - Mejora General del sito web:
-				<li>Encabezado estatico</li>
-				<li>Implemento de modo Oscuro y Claro</li>
-				<li>Proyectos separados por páginas</li>
-				<li>Optimización de proyectos</li>
-				<li>Optimización para celulares</li>
-			</ul>
-			<ul>En Proceso:
-				<li>Mejoras en el proyecto IA Text & Background</li>
-				<li>Mejoras en el proyecto Geometría</li>
-			</ul>
+		<h1>Base de Datos</h1>
+		<div class="container cont__pages">
+			<div class="add-names">
+				<input type="text" id="name" placeholder="Introduce un nombre">
+				<button id="add">Añadir</button>
+			</div>
+			<div class="names"></div>
 		</div>
 	</main>
 	<script type="text/javascript" src="../../js/header.js"></script>
