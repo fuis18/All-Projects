@@ -5,6 +5,7 @@ const addZeros = (n) => {
   if (n.toString().length < 2) return "0".concat(n);
   return n;
 };
+
 const actualizarHora = () => {
   "use strict";
   if (document.querySelector(".time")) {
@@ -13,11 +14,15 @@ const actualizarHora = () => {
     document.querySelector(".min").textContent = addZeros(time.getMinutes());
   }
 };
-document.querySelector(".home").addEventListener("click", () =>
-    window.location.assign("/All-Projects")
-  );
+
+document.querySelector(".home").addEventListener("click", () => {
+  const depth = window.location.pathname.split('/').filter(Boolean).length - 1;
+  window.location.assign('../'.repeat(depth) + 'index.html');
+});
+
 actualizarHora();
 setInterval(actualizarHora, 1000);
+
 // Mode
 // localStorage.setItem("mode","dark");
 let mode = localStorage.getItem("mode");
