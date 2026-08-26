@@ -1,5 +1,17 @@
 /*Tipografías*/
 @font-face {
 	font-family: DS-DIGI;
-	src:url(DS-DIGI.TTF);
+	src: url(DS-DIGI.TTF);
+}
+@font-face {
+	font-family: GeistVF;
+	src: url(GeistVF.woff);
+}
+@font-face {
+	font-family: GeistMonoVF;
+	src: url(GeistMonoVF.woff);
+}
+@font-face {
+	font-family: avenir;
+	src: url(Avenir_LT_35_Light.ttf);
 }
