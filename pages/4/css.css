@@ -2,21 +2,24 @@
 	display: block;
 }
 .f4,
+.f4__calculator,
 .f4__buttons-s,
 .f4__buttons-b {
 	display: grid;
-	grid-gap: 10px;
+	grid-gap: 10px 5px;
 	align-items: start;
 }
 .f4 {
 	grid-template:
-		"windows process" 84px
-		"buttons process" auto
-		"buttonb process" auto
-		/ 7fr 4fr;
+		"calculator" auto
+		"process" auto
+		/ 1fr;
+	grid-gap: 15px;
+}
+.f4__calculator {
+	grid-area: calculator;
 }
 .f4__window {
-	grid-area: windows;
 	background: #cfc;
 	border-radius: 8px;
 	padding: 5px 14px;
@@ -34,7 +37,7 @@
 	width: 100%;
 	display: flex;
 	font-family: monospace;
-	font-size: 20px;
+	font-size: 16px;
 }
 .f4__window-text {
 	font-weight: 700;
@@ -43,16 +46,14 @@
 .f4__window-answer,
 .f4__window-history {
 	text-align: right;
-	font-family: DS-DIGI;
-	font-size: 25px;
+	font-family: 'ds-digi';
+	font-size: 20px;
 }
 
 .f4__buttons-b {
-	grid-area: buttonb;
 	grid-template-columns: repeat(5, 1fr);
 }
 .f4__buttons-s {
-	grid-area: buttons;
 	grid-template-columns: repeat(6, 1fr);
 }
 .f4__buttons-s button,
@@ -68,12 +69,12 @@
 }
 .f4__button-s {
 	background: #223;
-	height: 22px;
+	height: 28px;
 	font-size: 14px;
 }
 .f4__button-b {
 	background: #777;
-	height: 30px;
+	height: 35px;
 	font-size: 18px;
 }
 .f4__button-n[value="DEL"],
@@ -81,11 +82,12 @@
 	background: #c55;
 }
 .f4__process {
-	grid-area: process;
+	font-family: math;
 	min-height: 50px;
 	border-left: 3px solid var(--color-title);
 	padding-left: 10px;
 	color: var(--color-text);
+	overflow-wrap: anywhere;
 }
 @keyframes animate-blink {
 	0% {
@@ -101,14 +103,15 @@
 		filter: opacity(1);
 	}
 }
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 900px) {
 	.f4 {
 		grid-template:
-			"windows" auto
-			"buttons" auto
-			"buttonb" auto
-			"process" auto
-			/ 1fr;
+			"calculator process" auto
+			/ 7fr 4fr;
+	}
+	.f4__buttons-s,
+	.f4__buttons-b {
+		grid-gap: 15px 12px;
 	}
 	.f4__history-div {
 		display: flex;
