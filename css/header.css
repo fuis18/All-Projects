@@ -10,6 +10,7 @@ header nav {
   display: grid;
   grid-gap: 10px;
   grid-auto-flow: column;
+  align-items: center;
 }
 header nav svg,
 header nav button {
